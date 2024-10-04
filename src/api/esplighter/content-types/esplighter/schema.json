@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esplighters",
+  "info": {
+    "singularName": "esplighter",
+    "pluralName": "esplighters",
+    "displayName": "esplighter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UID": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "esplighters"
+    },
+    "lightinfo": {
+      "type": "integer"
+    },
+    "Nom": {
+      "type": "string"
+    },
+    "lightMax": {
+      "type": "integer"
+    },
+    "LightMin": {
+      "type": "integer"
+    }
+  }
+}
